@@ -5,7 +5,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://172.17.0.3:3306/teamtogether?serverTimezone=GMT%2b8&useSSL=false&allowPublicKeyRetrieval=True
+    url: jdbc:mysql://localhost/teamtogether?serverTimezone=GMT%2b8&useSSL=false&allowPublicKeyRetrieval=True
     username: root
     password: 123456
   redis:
@@ -27,10 +27,10 @@ spring:
     # 编码集
     default-encoding: UTF-8
     #发送邮件的账户
-    username: z1436910962@163.com
+    username:
     #授权码
-    password: ETDVZVCHOLGLMPGM
-    test-connection: true
+    password:
+#    test-connection: true
     properties:
       mail:
         smtp:
@@ -38,9 +38,6 @@ spring:
           starttls:
             enable: true
             required: true
-
-#z1436910962@163.com
-#ETDVZVCHOLGLMPGM
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
